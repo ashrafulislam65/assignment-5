@@ -22,7 +22,7 @@
 </head>
 
 <body class="font-lexend">
-    <header class="sticky top-0">
+    <header class="sticky top-0 z-10">
         <!-- nav section start -->
         <nav class="flex  justify-around bg-gray-100 h-28 pt-5">
             <button class="bg-lime-300 text-base lg:text-xl w-16 lg:w-28 rounded-lg font-semibold h-12">Blog</button>
@@ -49,7 +49,7 @@
     </header>
     <main>
         <!-- donation section start -->
-        <section class="hidden">
+        <section class="">
             <!-- donate for Noakhali card -->
             <div class="hero  min-h-screen ">
                 <div class=" mt-2 hero-content flex-col lg:flex-row border-inherit border-2 rounded-xl">
@@ -69,9 +69,28 @@
                         <input class=" w-[400px] lg:w-[522px] h-10 rounded-lg border-inherit border-2 pl-5" type="text"
                             placeholder="Write Donation Amount">
                         <br>
-                        <button
+                        <button onclick="my_modal_1.showModal()"
                             class=" mt-4 w-[400px] lg:w-[522px] h-10 rounded-lg text-xl bg-lime-400 font-semibold">Donate
-                            Now</button>
+                            Now
+                        </button>
+                        <!-- modal -->
+                        
+                        
+                        <dialog id="my_modal_1" class="modal text-center">
+                            <div class="modal-box">
+                                <h3 class="text-2xl lg:text-4xl font-bold">Congrates!</h3>
+                                <img class=" mx-44 lg:mx-52 pt-5" src="./assets/coin.png" alt="">
+                                <p class="py-4">You Have Donated for Humankind</p>
+                                <p class="text-lg lg:text-2xl font-bold">Successfully</p>
+                                <div class="modal-action">
+                                    <form method="dialog ">
+                                       
+                                        <button class="btn mr-28 lg:mr-36">Close Confirmation</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+
                     </div>
                 </div>
             </div>
@@ -86,7 +105,12 @@
                         </div>
                         <h1 class="text-sm lg:text-xl font-bold pt-4">Donate for Flood Relief in Feni,Bangladesh </h1>
                         <p class=" w-[400px] lg:w-[522px] font-light pt-8 pb-10">
-                            The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                            The recent floods in Feni have devastated local communities, leading to severe disruption
+                            and loss. Your generous donation will help provide immediate aid, including food, clean
+                            water, and medical supplies, to those affected by this calamity. Together, we can offer
+                            crucial support and help rebuild lives in the aftermath of this disaster. Every contribution
+                            counts towards making a real difference. Please consider donating today to assist those in
+                            urgent need.
                         </p>
                         <input class=" w-[400px] lg:w-[522px] h-10 rounded-lg border-inherit border-2 pl-5" type="text"
                             placeholder="Write Donation Amount">
@@ -108,7 +132,12 @@
                         </div>
                         <h1 class="text-sm lg:text-xl font-bold pt-4">Aid for Injured in the Quota Movement </h1>
                         <p class=" w-[400px] lg:w-[522px] font-light pt-8 pb-10">
-                            The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+                            The recent Quota movement has resulted in numerous injuries and significant hardship for
+                            many individuals. Your support is crucial in providing medical assistance, rehabilitation,
+                            and necessary supplies to those affected. By contributing, you help ensure that injured
+                            individuals receive the care and support they need during this challenging time. Every
+                            donation plays a vital role in alleviating their suffering and aiding in their recovery.
+                            Please consider making a donation to support these brave individuals in their time of need.
                         </p>
                         <input class=" w-[400px] lg:w-[522px] h-10 rounded-lg border-inherit border-2 pl-5" type="text"
                             placeholder="Write Donation Amount">
@@ -122,10 +151,16 @@
 
         </section>
         <!-- donation section end -->
+        <!-- history Section start -->
+        <section>
+
+        </section>
+        <!-- history section end -->
     </main>
     <footer class="bg-base-200 h-28">
 
     </footer>
+    <script src="js/donation.js"></script>
 </body>
 
 </html>
