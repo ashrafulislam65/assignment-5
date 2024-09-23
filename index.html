@@ -73,10 +73,10 @@
                             class=" mt-4 w-[400px] lg:w-[522px] h-10 rounded-lg text-xl bg-lime-400 font-semibold">Donate
                             Now
                         </button>
-                        <!-- modal -->
+                        <!-- modal-1 -->
                         
                         
-                        <dialog class="hidden"id="my_modal_1" class="modal text-center">
+                        <dialog id="my_modal_1" class="modal text-center hidden">
                             <div class="modal-box">
                                 <h3 class="text-2xl lg:text-4xl font-bold">Congrates!</h3>
                                 <img class=" mx-44 lg:mx-52 pt-5" src="./assets/coin.png" alt="">
@@ -115,9 +115,27 @@
                         <input id="donate-amount2" class=" w-[400px] lg:w-[522px] h-10 rounded-lg border-inherit border-2 pl-5" type="text"
                             placeholder="Write Donation Amount">
                         <br>
-                        <button id="btn-feni-donate"
+                        <button id="btn-feni-donate" onclick="my_modal_2.showModal()"
                             class=" mt-4 w-[400px] lg:w-[522px] h-10 rounded-lg text-xl bg-lime-400 font-semibold">Donate
                             Now</button>
+
+                            <!--  Modal-2-->
+                            <dialog id="my_modal_2" class="modal text-center hidden">
+                                <div class="modal-box">
+                                    <h3 class="text-2xl lg:text-4xl font-bold">Congrates!</h3>
+                                    <img class=" mx-44 lg:mx-52 pt-5" src="./assets/coin.png" alt="">
+                                    <p class="py-4">You Have Donated for Humankind</p>
+                                    <p class="text-lg lg:text-2xl font-bold">Successfully</p>
+                                    <div class="modal-action">
+                                        <form method="dialog ">
+                                           
+                                            <button class="btn mr-28 lg:mr-36">Close Confirmation</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+
+                    
                     </div>
                 </div>
             </div>
@@ -143,9 +161,24 @@
                             placeholder="Write Donation Amount">
                         <br>
                         <button
-                            id="btn-quota-donate"
+                            id="btn-quota-donate" onclick="my_modal_3.showModal()"
                             class=" mt-4 w-[400px] lg:w-[522px] h-10 rounded-lg text-xl bg-lime-400 font-semibold">Donate
                             Now</button>
+                            <!-- modal-3 -->
+                            <dialog id="my_modal_3" class="modal text-center hidden">
+                                <div class="modal-box">
+                                    <h3 class="text-2xl lg:text-4xl font-bold">Congrates!</h3>
+                                    <img class=" mx-44 lg:mx-52 pt-5" src="./assets/coin.png" alt="">
+                                    <p class="py-4">You Have Donated for Humankind</p>
+                                    <p class="text-lg lg:text-2xl font-bold">Successfully</p>
+                                    <div class="modal-action">
+                                        <form method="dialog ">
+                                           
+                                            <button class="btn mr-28 lg:mr-36">Close Confirmation</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                     </div>
                 </div>
             </div>
