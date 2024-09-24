@@ -6,6 +6,9 @@ document.getElementById('history-show-btn').addEventListener('click',function(){
     getShowFormById('history-show')
     
 })
+
+
+
 //operation
 const colorBtn1 = document.getElementById('donation-form-btn');
 colorBtn1.addEventListener('click',function(){
