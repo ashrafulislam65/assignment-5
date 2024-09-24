@@ -13,12 +13,5 @@ function getTextFieldValueById(id){
     const textInNumber = parseFloat(textValue)
     return textInNumber;
 }
-// Show and Hide form
-function getShowFormById(id){
-    document.getElementById('donate-form-show').classList.add('hidden');
-    document.getElementById('history-show').classList.add('hidden');
-    document.getElementById(id).classList.remove('hidden');
-    
-    
-}
+
 

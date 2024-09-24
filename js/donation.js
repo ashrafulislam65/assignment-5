@@ -38,7 +38,7 @@ document.getElementById('btn-noakhali-donate').addEventListener('click', functio
         document.getElementById('history-show').appendChild(div);
         //history end here
         
-        document.getElementById('my_modal_1').classList.remove('hidden');
+        
        
         document.getElementById('donate-amount').value='';
        
@@ -86,7 +86,7 @@ document.getElementById('btn-feni-donate').addEventListener('click', function ()
         <p>${new Date()}</p>`;
         document.getElementById('history-show').appendChild(div1);
         //history end
-        document.getElementById('my_modal_2').classList.remove('hidden')
+        document.getElementById('donate-amount').value='';
 
     }
     else {
@@ -127,7 +127,8 @@ document.getElementById('btn-quota-donate').addEventListener('click', function (
         <p>${new Date()}</p>`;
         document.getElementById('history-show').appendChild(div2);
         //history end
-        document.getElementById('my_modal_3').classList.remove('hidden')
+        
+        document.getElementById('donate-amount').value='';
 
     }
     else{

@@ -1,35 +1,21 @@
-document.getElementById('donation-form-btn').addEventListener('click',function(){
-    getShowFormById('donate-form-show')
-   
-})
-document.getElementById('history-show-btn').addEventListener('click',function(){
-    getShowFormById('history-show')
+
+const historyTab =document.getElementById('history-show-btn');
+const donationTab =document.getElementById('donation-form-btn');
+historyTab.addEventListener('click',function(){
+    historyTab.classList.add('bg-lime-400');
+    historyTab.classList.remove('bg-gray-400')
+    donationTab.classList.remove('bg-lime-400');
+    donationTab.classList.add('bg-gray-400');
+    document.getElementById('donate-form-show').classList.add('hidden');
+    document.getElementById('history-show').classList.remove('hidden');
     
 })
-
-
-
-//operation
-const colorBtn1 = document.getElementById('donation-form-btn');
-colorBtn1.addEventListener('click',function(){
-    if(colorBtn1.classList.contains('bg-lime-400')){
-        colorBtn1.classList.remove('bg-lime-400')
-        colorBtn1.classList.add('bg-gray-400')
-    }
-    else{
-        colorBtn1.classList.remove('bg-gray-400')
-        colorBtn1.classList.add('bg-lime-400')
-    }
-})
-//
-const colorBtn2 = document.getElementById('history-show-btn');
-colorBtn1.addEventListener('click',function(){
-    if(colorBtn2.classList.contains('bg-gray-400')){
-        colorBtn2.classList.remove('bg-gray-400')
-        colorBtn2.classList.add('bg-lime-400')
-    }
-    else{
-        colorBtn2.classList.remove('bg-lime-400')
-        colorBtn2.classList.add('bg-gray-400')
-    }
+donationTab.addEventListener('click',function(){
+    historyTab.classList.remove('bg-lime-400');
+    historyTab.classList.add('bg-gray-400')
+    donationTab.classList.add('bg-lime-400');
+    donationTab.classList.remove('bg-gray-400');
+    document.getElementById('donate-form-show').classList.remove('hidden');
+    document.getElementById('history-show').classList.add('hidden');
+    
 })
