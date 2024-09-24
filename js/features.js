@@ -1,4 +1,4 @@
-
+// button swiping feature
 const historyTab =document.getElementById('history-show-btn');
 const donationTab =document.getElementById('donation-form-btn');
 historyTab.addEventListener('click',function(){

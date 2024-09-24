@@ -1,4 +1,4 @@
-document.getElementById('btn-noakhali-donate').addEventListener('click', function (event) {
+document.getElementById('btn-noakhali-donate').addEventListener('click', function () {
     
  
     // donate for nokhali operation 
@@ -6,14 +6,20 @@ document.getElementById('btn-noakhali-donate').addEventListener('click', functio
 
     const donateAmount = getInputFieldValueById('donate-amount');
     const fundAmount = getTextFieldValueById('current-amount');
+    
      if(donateAmount<=0)
      {
+        
         alert('Insufficient Funding')
+        document.getElementById('my_modal_1').close()
         return;
+        
+        
      }
      if(donateAmount>mainAccountBalance)
         {
             alert('Insufficient Funding')
+            document.getElementById('my_modal_1').close()
             return;
         }
 
@@ -46,7 +52,8 @@ document.getElementById('btn-noakhali-donate').addEventListener('click', functio
 
     }
     else {
-        alert('Failed to donate please try again')
+        alert('Failed to donate please try again! type amount correctly');
+        document.getElementById('my_modal_1').close();
     }
     
 
@@ -64,11 +71,13 @@ document.getElementById('btn-feni-donate').addEventListener('click', function ()
     if(donateAmount2<=0)
         {
            alert('Insufficient Funding')
+           document.getElementById('my_modal_2').close();
            return;
         }
         if(donateAmount2>mainAccountBalance2)
            {
                alert('Insufficient Funding')
+               document.getElementById('my_modal_2').close();
                return;
            }
     if (!isNaN(donateAmount2)) {
@@ -90,7 +99,8 @@ document.getElementById('btn-feni-donate').addEventListener('click', function ()
 
     }
     else {
-        alert('Failed to donate please try again')
+        alert('Failed to donate please try again! type amount correctly')
+        document.getElementById('my_modal_2').close();
     }
 
 
@@ -105,11 +115,13 @@ document.getElementById('btn-quota-donate').addEventListener('click', function (
     if(donateAmount3<=0)
         {
            alert('Insufficient Funding')
+           document.getElementById('my_modal_3').close();
            return;
         }
         if(donateAmount3>mainAccountBalance3)
            {
                alert('Insufficient Funding')
+               document.getElementById('my_modal_3').close();
                return;
            }
     if (!isNaN(donateAmount3)) {
@@ -132,7 +144,8 @@ document.getElementById('btn-quota-donate').addEventListener('click', function (
 
     }
     else{
-        alert('failed to donate please try again')
+        alert('failed to donate please try again!type amount correctly')
+        document.getElementById('my_modal_3').close();
     }
 
 
